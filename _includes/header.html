@@ -17,7 +17,13 @@
                 <a href="/about">{% if site.localization=='CN'%}关于{% else if site.localization=='TC' %}關于{% else
                     %}About{% endif %}</a>
             </li>
-        </ul>
+
+            {% for tag in site.data.links %}
+              <li><a href="{{ tag.href | prepend: site.baseurl }}">{{ tag.name }}</a></li>
+            {% endfor %}
+            
+          </ul>
+    
     </nav>
     <nav class="main">
         <ul>
