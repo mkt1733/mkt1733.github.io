@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 2004-12-16-title-rand-sccheseatt
+title: 2005-11-10-test-md-file
 subtitle: "This is a test article"
-date: 2023-07-05 10:00:00 +0800
+date: 2005-11-10 10:00:00 +0800
 cover: "/images/test_cover.jpg"
 stickie: false
-categories: ctg10
+categories: ctg-test3
 tag:
-  - test
-  - article
+  - tag-test2
 ---
-test
+test file
         

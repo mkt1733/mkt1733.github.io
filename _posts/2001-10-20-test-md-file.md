@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 2010-12-19-title-rand-chasrarscc
+title: 2001-10-20-test-md-file
 subtitle: "This is a test article"
-date: 2023-07-05 10:00:00 +0800
+date: 2001-10-20 10:00:00 +0800
 cover: "/images/test_cover.jpg"
 stickie: false
-categories: ctg10
+categories: ctg-test2
 tag:
-  - test
-  - article
+  - tag-test3
 ---
-test
+test file
         

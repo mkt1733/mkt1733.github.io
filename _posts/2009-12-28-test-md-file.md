@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 2007-10-11-title-rand-ctcatashea
+title: 2009-12-28-test-md-file
 subtitle: "This is a test article"
-date: 2023-07-05 10:00:00 +0800
+date: 2009-12-28 10:00:00 +0800
 cover: "/images/test_cover.jpg"
 stickie: false
-categories: ctg12
+categories: ctg-test3
 tag:
-  - test
-  - article
+  - tag-test1
 ---
-test
+test file
         
