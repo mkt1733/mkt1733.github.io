@@ -52,6 +52,13 @@ localization: CN # 本地化显示，可选项：EN(英文), CN(简体中文), T
 article_introduction_format: post.excerpt
 article_catalogue: true # 是否在侧边菜单展示文章目录/Whether to display the article catalogue in the sidebar menu
 
+# 顶栏样式配置/Header style settings
+header:
+  menu: true # 是否在顶栏显示“菜单”/Whether to display "menu" in the header.
+  about: true # 是否在顶栏显示“关于”/Whether to display "About" in the header.
+  archive: true # 是否在顶栏显示“归档”/Whether to display "Archive" in the header.
+  list-categories: false # 是否在顶栏直接列出全部分类/Whether to list all categories directly in the header.
+
 # 评论功能配置/Comment settings
 gitalk: # Gitalk(https://github.com/gitalk/gitalk)相关配置，请自行修改。/Gitalk settings, please modify it.
   enable: true # 是否启用Gitalk/Whether to enable Gitalk
