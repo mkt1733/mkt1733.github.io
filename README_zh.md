@@ -1,3 +1,9 @@
+# Makoto的改动：
+将“归档”更名为“全部文章”
+目前右边弹出栏处“菜单”指向的是首页，故修改了该处的文字
+修改了footer处电子邮箱bottom的提示语及超链接
+其他微小改动
+
 # Future-Imperfect Jekyll Template
 
 > 一个基于[Future Imperfect](https://html5up.net/future-imperfect)制作的Jekyll模板.

@@ -22,12 +22,12 @@ en: # 英文/English
 
 zh-Hans: # 简体中文/Simplified Chinese
   about: "关于"
-  archive: "归档"
+  archive: "全部文章"
   catalogue: "目录"
   categories: "类别"
   continue-reading: "继续阅读"
   home: "首页"
-  menu: "菜单"
+  menu: "首页" # 这里原为“菜单”，但似乎仍然指向首页
   more: "更多"
   most-categories: "最多的类别"
   most-tags: "最多的标签"
