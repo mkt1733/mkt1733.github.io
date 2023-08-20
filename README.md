@@ -1,18 +1,16 @@
+# Makoto的改动：
+将“归档”更名为“全部文章”
+目前右边弹出栏处“菜单”指向的是首页，故修改了该处的文字
+修改了footer处电子邮箱bottom的提示语及超链接
+其他微小改动
+
 # Future-Imperfect Jekyll Template
 
-> A Jekyll template based on [Future Imperfect](https://html5up.net/future-imperfect).
+> 一个基于[Future Imperfect](https://html5up.net/future-imperfect)制作的Jekyll模板.
 >
-> I really like its style, but the Jekyll templates for it on GitHub aren't practical enough, so I made this repo.
+> 我很喜欢它的风格，但是目前Github上关于它的Jekyll模板并不够实用，所以有了这个repo。
 
-[![中文文档](https://img.shields.io/badge/README-中文文档-blue)](./README_zh.md)
-[![预览](https://img.shields.io/badge/Deployment-Steven's_Blog-yellow)](https://steven-zhl.github.io)
-
-![语言](https://img.shields.io/github/languages/top/Steven-Zhl/Future-Imperfect_Jekyll-Template.svg)
-![开源协议](https://img.shields.io/github/license/Steven-Zhl/Future-Imperfect_Jekyll-Template.svg)
-![上次提交](https://img.shields.io/github/last-commit/Steven-Zhl/Future-Imperfect_Jekyll-Template.svg)
-![仓库大小](https://img.shields.io/github/repo-size/Steven-Zhl/Future-Imperfect_Jekyll-Template.svg)
-
-## Environment(Build)
+## 构建环境
 
 * Windows 11 22H2 (x64)
 * Ruby 3.2.2
@@ -21,47 +19,45 @@
   * jekyll-paginate 1.1.0
 * simple-jekyll-search 1.10.0
 
-## Features
+## 功能
 
-* Basic Features
-  * [x] Article search (based on simple-jekyll-search)
-  * [x] Article table of contents (based on Jekyll-TOC)
-  * [x] Article pagination (based on jekyll-paginate)
-  * [x] Article archiving and filtering (by category or tag)
-* Styling
-  * [x] Code highlighting (based on rouge)
-  * [x] Formula rendering (based on MathJax)
-  * [x] Rendered mermaid charts (based on jekyll-mermaid)
-  * [x] Customizable header
-* Comments
-  * [x] Gitalk comments
-  * [ ] Disqus comments
+* 基本功能
+  * [x] 搜索文章(基于[simple-jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search))
+  * [x] 文章目录(基于[Jekyll-TOC](https://github.com/allejo/jekyll-toc))
+  * [x] 文章分页(基于[jekyll-paginate](https://rubygems.org/gems/jekyll-paginate/versions/1.1.0))
+  * [x] 文章归档与筛选(按照category或tag)
+* 美化
+  * [x] 代码高亮(基于[rouge](https://rubygems.org/gems/rouge/versions/4.1.2))
+  * [x] 渲染公式(基于[MathJax](https://www.mathjax.org))
+  * [x] 渲染mermaid图表(基于[jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid))
+  * [x] 可定制的header
+* 评论
+  * [x] Gitalk评论
+  * [ ] Disqus评论
 
-## Usage
+## 使用
 
-### (1) Configuration
+### (1) 配置
 
 * `git clone`
-* Modify `_config.yml`
-  > It is recommended to run `jekyll serve` locally before deployment to check for any issues.
+* 修改`_config.yml`
+  > 建议在部署前先在本地运行一下`jekyll serve`，检查是否有问题
 
-### (2) Deployment(GitHub Pages)
+### (2) 部署(GitHub Pages)
 
-* Writing Articles (Please save them in the `_posts` folder)
-* Upload the entire project to GitHub, with the repository name `<username>.github.io`
-* In the repository settings, find `Pages` and click it.
-  1. In the `Source` option, select `Action`
-  2. Click the `Configuration` button for `GitHub Pages Jekyll` on the redirected page
-  3. You will then be prompted to add a `.yml` file, which you can add without modification.
-  4. Wait a moment, and Github Pages will complete the deployment, after which you can access it
-     via `https://<username>.github.io`.
+* 撰写文章(请保存在`_posts`文件夹中)
+* 将整个项目上传到Github，仓库名为`<username>.github.io`
+* 在仓库设置中找到`Pages`，点击。
+  1. 在`Source`的选项中选择`Action`
+  2. 在跳转页面中点击`GitHub Pages Jekyll`的`Configuration`按钮
+  3. 随后会请求添加一个`.yml`文件，不用修改直接添加即可
+  4. 稍等片刻，Github Pages将会完成部署，之后就可以通过`https://<username>.github.io`访问。
 
-### (3) About Front Matter
+### (3) 关于头信息
 
-> Even if you are already familiar with Jekyll, it is recommended to review this section. Some modifications have been
-> made to this section based on the style of Future-Imperfect.
+> 哪怕你已经十分熟悉Jekyll了，也建议你再看看这一部分，这部分根据Future-Imperfect的样式做了一些改动
 
-* In this project, a typical **Front Matter** is shown below:
+* 本项目中，一个典型的头信息如下所示：
   ```yaml
   ---
   layout: post
@@ -77,32 +73,26 @@
   category: test
   ---
   ```
-* `layout`: Layout style, please fill in **post** to indicate that this article should use the "post" layout.
-* `title`: Title, must not be left blank.
-* `subtitle`: Subtitle, can be left blank or deleted directly (the absence of the `subtitle` field is allowed).
-* `author`: Author, when left blank or deleted, it will display the `username` field in `_config.yml`; if provided and
-  different from `username`, it will use the content you provide.
-* `date`: Publication date, please follow the format in the example. The `+0800` at the end indicates the GMT+8 time
-  zone (Beijing time).
-* `cover`: Cover image, when left blank or deleted, the default cover
-  image [/images/default_cover.jpg](./images/default_cover.jpg) will be used.
-* `stick`: Whether to pin it to the left side of the homepage. Leaving it blank or deleting it is equivalent to `false`.
-  It is not recommended to have too many articles pinned.
-* `tag`: Tags, used for filtering articles, multiple tags are allowed.
-* `category`: Category, used for filtering articles. It is not recommended to use multiple categories, as the design is
-  based on a single category from the beginning.
+* `layout`：布局样式，请填**post**，表示让这篇文章应用“post”布局。
+* `title`：标题，不能留空
+* `subtitle`：副标题，可以留空或直接删除(允许不存在subtitle这一字段)。
+* `author`：作者，留空或直接删除时，显示`_config.yml`中的`username`字段；若存在且与`username`不同，则使用所填的内容。
+* `date`：发布日期，请按照示例的格式来写，最后的`+0800`表示时区为GMT+8(北京时间)
+* `cover`：封面，留空或直接删除时会使用默认封面[/images/default_cover.jpg](./images/default_cover.jpg)
+* `stick`：是否固定到首页左侧，留空或删除等同于false，不建议stick的文章过多。
+* `tag`：标签，用于筛选文章，允许多个tag。
+* `category`：类别，用于筛选文章，不建议多个category，在设计之初就是按照单个category设计的。
 
-## Issues
+## 问题
 
-* ~~In some cases, the top bar may not stick to the top of the page and instead appear on the side of the page, causing
-  issues with the overall page layout~~
-  > This issue has been resolved, refer to [Notes](#notes) item 1 for details.
+* ~~部分情况下，顶栏可能不会固定在顶部而是出现在页面侧边，导致整个页面的样式出现问题~~
+  > 已解决，详见[注意事项](#注意事项)第1项
 
-## Notes
+## 注意事项
 
-1. When using AdGuard or similar browser extensions, do not enable **Web Annoyances Ultralist** (`Filters > Annoyances > Web Annoyances Ultralist`). This rule can cause certain styles to be overridden by the browser's default styles, leading to abnormal page styling.
+1. 在使用AdGuard或同类浏览器插件时，不要启用**Web Annoyances Ultralist**(`过滤器 > 扰人的 > Web Annoyances Ultralist`)，该规则会使部分样式被浏览器默认样式覆盖，导致页面样式异常。
 
-## Original README from HTML5 UP
+## 来自HTML5 UP的原始README
 
     Future Imperfect by HTML5 UP
     html5up.net | @ajlkn
