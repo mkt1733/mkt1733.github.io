@@ -79,8 +79,9 @@
         </div>
     </header>
     <span class="image featured">
-        <img src="{% if page.cover %}{{ page.cover }}{% else %}{{ site.baseurl }}/images/default_cover.jpg{% endif %}"
-             alt="{{ page.title }}"/>
+        <!-- 以下行被注释掉了，注释后正文中不再展示封面图 -->
+        <!-- <img src="{% if page.cover %}{{ page.cover }}{% else %}{{ site.baseurl }}/images/default_cover.jpg{% endif %}"
+             alt="{{ page.title }}"/> -->
     </span>
     {{ page.content }}
     <footer>
